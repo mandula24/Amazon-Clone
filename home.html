@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar bg-gray-950 text-white flex justify-evenly items-center p-4 h-15 w-100%">
+            <div class="logo">
+                <img src="images/Amazon-Emblem.jpg" class="h-10 p-1" alt="Logo">
+            </div>
+            <div class="address items-center  ">
+                <p class="text-gray-300 ml-5 text-sm ">Deliver to</p>
+                <div class="flex items-center text-white gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <p class="text-lg  ">India</p>
+                </div>
+            </div>
+            <div class="search-bar  flex items-center text-gray-800 rounded-md shadow-md ">
+                    <div class="dropdown">
+                        <select class="bg-gray-200  w-15 p-1 h-10  rounded-l-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            <div class="text-white">ALL</div>
+                            <option value="all">All</option>
+                            <option value="all Departments">All Departments</option>
+                            <option value="Automotive">Automotive</option>
+                            <option value="Baby">Baby</option>
+                            <option value="all">Beauty & Personal Care</option>
+                            <option value="all">Books</option>
+                            <option value="all">Boy's Fashion</option>
+                            <option value="all">Computers</option>
+                            <option value="all">Deals</option>
+                            <option value="all">Digital Music</option>
+                            <option value="all">Electronics</option>
+                            <option value="all">Girl's Fashion</option>
+                            <option value="all">Health & Household</option>
+                            <option value="all">Home & Kitchen</option>
+                            <option value="all">Industrial & Scientific</option>
+                            <option value="all">Kindle Store</option>
+                            <option value="all">Luggage</option>
+                            <option value="all">Men's Fashion</option>
+                            <option value="all">Movies &TV</option>
+                            <option value="all">Music, CDs & Vinyl</option>
+                            <option value="all">Pet Supplies</option>
+                            <option value="all">Prime Video</option>
+                            <option value="all">Software</option>
+                            <option value="all">Sports & outdoors</option>
+                            <option value="all">Tools & Home Improvement</option>
+                            <option value="all">Toys & Games</option>
+                            <option value="all">video Games</option>
+                            <option value="all">Women's Fashion</option>
+
+                        </select>
+                    </div>
+                <input type="text" placeholder="Search Amazon" class="p-2 rounded-1-md border-none h-10   bg-white border-none hover:ring-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 ">
+                
+                <button class="bg-orange-300 text-white p-2 rounded-r-md w-12 hover:bg-orange-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+
+                </button>
+        
+            </div>
+            <div class="language flex items-center hover:">
+                <div class="flex items-center text-white gap-1">
+                    <img src="images/206626.png" class="h-5" alt="">
+                    <div>EN</div>
+                </div>
+                <div class="">
+                    <select name="language" id="language" class="bg-gray-950 max-w-5">
+                    <option value=" " class=""></option>
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी</option>
+                    <option value="ta">தமிழ்</option>
+                    <option value="te">తెలుగు</option>
+                    <option value="bn">বাংলা</option>
+                    <option value="mr">मराठी</option>
+                    <option value="gu">ગુજરાતી</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                    <option value="ml">മലയാളം</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>
