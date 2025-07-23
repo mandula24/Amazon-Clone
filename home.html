@@ -10,21 +10,21 @@
 </head>
 <body>
     <header>
-        <div class="navbar bg-gray-950 text-white flex justify-evenly items-center p-4 h-15 w-100%">
-            <div class="logo">
+        <div class="navbar bg-gray-950 text-white flex justify-between items-center p-4 h-15 w-100%">
+            <div class="logo hover:border">
                 <img src="images/Amazon-Emblem.jpg" class="h-10 p-1" alt="Logo">
             </div>
-            <div class="address items-center  ">
+            <div class="address items-center hover:border">
                 <p class="text-gray-300 ml-5 text-sm ">Deliver to</p>
-                <div class="flex items-center text-white gap-2">
+                <div class="flex items-center text-white ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                     </svg>
-                    <p class="text-lg  ">India</p>
+                    <p class="text-lg ">India</p>
                 </div>
             </div>
-            <div class="search-bar  flex items-center text-gray-800 rounded-md shadow-md ">
+            <div class="search-bar  flex items-center text-gray-800 rounded-md shadow-md w-100px">
                     <div class="dropdown">
                         <select class="bg-gray-200  w-15 p-1 h-10  rounded-l-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
                             <div class="text-white">ALL</div>
@@ -59,7 +59,7 @@
 
                         </select>
                     </div>
-                <input type="text" placeholder="Search Amazon" class="p-2 rounded-1-md border-none h-10   bg-white border-none hover:ring-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 ">
+                <input type="text" placeholder="Search Amazon" class="p-2 rounded-1-md border-none h-10  bg-white border-none hover:ring-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 ">
                 
                 <button class="bg-orange-300 text-white p-2 rounded-r-md w-12 hover:bg-orange-400">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -69,9 +69,9 @@
                 </button>
         
             </div>
-            <div class="language flex items-center hover:">
-                <div class="flex items-center text-white gap-1">
-                    <img src="images/206626.png" class="h-5" alt="">
+            <div class="language flex items-center ">
+                <div class="flex items-center text-white gap-1 hover:border">
+                    <img src="images/206626.png" class="h-5 " alt="">
                     <div>EN</div>
                 </div>
                 <div class="">
@@ -89,6 +89,34 @@
                     </select>
                 </div>
             </div>
+            <div class=" flex">
+                <div class="sign-in hover:border">
+                    <div class="flex items-center gap-1 text-xs">
+                     Hello, Sign in
+                    </div>
+                    <div class="text-base flex font-bold cursor-pointer">
+                        Account & Lists
+                        <div>
+                            <select name="sign-in" id="lists">
+                            <option value=""></option>
+                            </select>
+                        </div>
+                    
+                    </div>
+                </div>
+                
+            </div>
+            <div class="orders hover:border">
+                <p class="text-sm">Returns</p>
+                <p class="font-bold">& Orders</p>
+            </div> 
+            <div class="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+
+
+            </div>     
         </div>
     </header>
     
