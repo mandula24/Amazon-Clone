@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="overflow-x-hidden bg-gray-100">
+<body class=" bg-gray-100">
     <header >
         <div class=" bg-gray-950 text-white flex justify-between items-center h-14 px-5">
             <!-- // Logo and Address Section."> -->
@@ -135,57 +135,36 @@
         </div>
     </header>
     <!-- hero with gradient fade -->
-    <section class="relative h-screen ">
+    <section class="relative h-screen">
         <!-- image layer -->
-         <!-- <div class="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center bg-[linear-gradient(to_bottom,transparent_50%,white_50%)]"></div> -->
-
-
-        <div class=" absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover"></div>
+        <div class=" absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center"></div>
         <!-- fade to white -->
-        <div class="absolute inset-0  bg-gradient-to-b from-transparent to-white"></div>
+        <div class="absolute inset-0  bg-gradient-to-b from-transparent to-white"></div> 
         <!-- content layer -->
-        <div class="relative z-10 h-full  flex flex-col justify-between">
-           <div class=" bg-white rounded shadow-md w-full mt-80 p-4 text-center">
+        <div class="relative  z-10 h-full  flex flex-col justify-between">
+           <div class=" bg-white rounded shadow-md  mt-80 p-4 text-center">
              <p class="text-gray-800 text-sm">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="/" class="text-blue-600">Click her to go to amazon.in</a></p>
             </div>
-        
-    
-            <!-- product cards -->
-            <main class="container mx-auto px-4 py-8">
+            
+            
+        </div>
+    </section>
+    <!-- product cards -->
+    <main class="px-4 py-8 mb-[100px]">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-8">
                     <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
-                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
+                        <h3 class="text-lg font-bold mt-2">Get Your game on</h3>
                         <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
-                        <p class="text-gray-600">This is a description for card 1.</p>
+                        <a href="#" class="text-blue-600">Shop gaming</a>
                     </div>
                     <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
-                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
-                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
-                        <p class="text-gray-600">This is a description for card 1.</p>
+                        <h3 class="text-lg font-bold mt-2">Cleaning Tools</h3>
+                        <img src="images/CleaningTool_1x._SY116_CB563137408_.jpg" alt="Card Image" class="w-full h-70 object-cover rounded-md">
+                        <a href="#" class="text-blue-600">Show more</a>
                     </div>
                     <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
-                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
-                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
-                        <p class="text-gray-600">This is a description for card 1.</p>
-                    </div>
-                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
-                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
-                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
-                        <p class="text-gray-600">This is a description for card 1.</p>
-                    </div>
-                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
-                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
-                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
-                        <p class="text-gray-600">This is a description for card 1.</p>
-                    </div>
-                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
-                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
-                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
-                        <p class="text-gray-600">This is a description for card 1.</p>
-                    </div>
-                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
-                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
-                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
+                        <h3 class="text-lg font-bold mt-2">School bags & more</h3>
+                        <img src="images/Fuji_QuadCard_Bag_BTS25_1x._SY116_CB789327598_.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
                         <p class="text-gray-600">This is a description for card 1.</p>
                     </div>
                     <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
@@ -197,8 +176,58 @@
                 </div>
 
             </main>
+    <!-- footer -->
+     <footer>
+        <div class="bg-gray-200 text-gray-700 py-8">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Get to Know Us</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-blue-600">Careers</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Blog</a></li>
+                            <li><a href="#" class="hover:text-blue-600">About Amazon</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Investor Relations</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Make Money with Us</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-blue-600">Sell products on Amazon</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Sell on Amazon Business</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Sell apps on Amazon</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Become an Affiliate</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Amazon Payment Products</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-blue-600">Amazon Rewards Visa Signature Cards</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Amazon.com Store Card</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Amazon Business Card</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Shop with Points</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Let Us Help You</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-blue-600">Your Account</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Your Orders</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Shipping Rates & Policies</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Returns & Replacements</a></li>
+                        </ul>           
+                    </div> 
+                </div>
+            </div>
         </div>
-    </section>
+         <div class="bg-gray-800 text-white text-center py-4">
+                <p class="text-sm">© 2023 Amazon Clone. All rights reserved.</p>
+        </div>
+        <div class="bg-gray-700 text-white text-center py-2">
+                <p class="text-xs">This is a clone project for educational purposes only.</p>
+        </div>     
+    </footer>
+
     
     
 </body>
