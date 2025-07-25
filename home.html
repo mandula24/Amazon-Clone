@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Clone</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <header>
-        <div class="navbar bg-gray-950 text-white flex justify-evenly items-center h-15 w-full">
-            <div class="logo hover:border">
-                <img src="images/Amazon-Emblem.jpg" class="h-10 p-1 " alt="Logo">
-            </div>
+<body class="overflow-x-hidden bg-gray-100">
+    <header >
+        <div class=" bg-gray-950 text-white flex justify-between items-center h-14 px-5">
+            <!-- // Logo and Address Section."> -->
+                <a href="#" class="flex-shrink-0 hover:border"><img src="images/Amazon-Emblem.jpg" class="h-10 p-[4px]" alt="Logo"></a>
+            
             <div class="address  items-center hover:border">
                 <p class="text-gray-300 ml-5 text-sm ">Deliver to</p>
                 <div class="flex items-center text-white ">
@@ -23,9 +24,10 @@
                     <p class="text-lg ">India</p>
                 </div>
             </div>
-            <div class="search-bar relative  flex items-center justify-evenly text-gray-800 rounded-md shadow-md w-620px h-10">
-                    <div class="dropdown">
-                        <select class="bg-gray-200  w-15 p-1 h-10  rounded-l-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            <!-- search bar -->
+            <div class="hidden md:flex flex-1 mx-4 max-w-full md:max-w-[620px] bg-white  rounded-md shadow overflow-hidden">
+                    <div class="dropdown text-gray-600">
+                        <select class="bg-gray-200  w-20 px-2 h-10   hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
                             <div class="text-white">ALL</div>
                             <option value="all">All</option>
                             <option value="all Departments">All Departments</option>
@@ -58,9 +60,9 @@
 
                         </select>
                     </div>
-                <input type="text" placeholder="Search Amazon" class="p-2 w-100% rounded-1-md border-none  bg-white hover:ring-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500" >
+                <input type="text" placeholder="Search Amazon" class="px-4 flex-1  border-none  bg-white hover:ring-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500" >
                 
-                <button class="bg-orange-300 text-white p-2 rounded-r-md w-12 hover:bg-orange-400">
+                <button class="bg-orange-500 text-white p-2 rounded-r-md w-12 hover:bg-orange-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>
@@ -68,6 +70,7 @@
                 </button>
         
             </div>
+            <!-- Language and Sign-in Section -->
             <div class="language flex items-center ">
                 <div class="flex items-center text-white gap-1 hover:border">
                     <img src="images/206626.png" class="h-5 " alt="">
@@ -88,36 +91,115 @@
                     </select>
                 </div>
             </div>
-            <div class=" flex">
-                <div class="sign-in hover:border">
-                    <div class="flex items-center gap-1 text-xs">
+             <!-- nav links -->
+            <nav class=" flex items-center space-x-6 text-sm">
+                <div class="sign-in hover:border ">
+                    <a href="# " >
+                        <div class="flex items-center gap-1 text-xs">
                      Hello, Sign in
                     </div>
                     <div class="text-base flex font-bold cursor-pointer">
                         Account & Lists
-                        <div>
-                            <select name="sign-in" id="lists">
-                            <option value=""></option>
-                            </select>
-                        </div>
-                    
                     </div>
+                    </a>
                 </div>
                 
-            </div>
-            <div class="orders hover:border">
-                <p class="text-sm">Returns</p>
-                <p class="font-bold">& Orders</p>
-            </div> 
-            <div class="cart">
+                <div class="orders hover:border">
+                    <a href="#">
+                        <p class="text-sm">Returns</p>
+                        <p class="font-bold">& Orders</p>
+                    </a>
+                </div> 
+                <a href="#">
+                    <i class="fas fa-shopping-cart text-2xl"></i>
+                    <span class="absolute -top-0.5 -right-0.5 bg-orange-500 text-xs rounded-full w-5 h-5 flex items-center justify-center ">0</span>
+                </a>
+                
+                    
+            </nav>    
+        </div>
+        <!-- sub nav -->
+        <div class="bg-gray-800   ">
+            <div class=" flex flex-wrap gap-4 text-sm py-2 text-white">
+               <button class="hover:border flex">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                </svg>
-
-
-            </div>     
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg><span>All</span>
+               </button>
+                <a href="#" class="hover:border ">Today's Deals</a>
+                <a href="#" class="hover:border ">Customer Service</a>
+                <a href="#" class="hover:border ">Registry</a>
+                <a href="#" class="hover:border ">Gift Cards</a>
+                <a href="#" class="hover:border ">Customer Service</a>
+                <a href="#" class="hover:border ">Sell</a>
         </div>
     </header>
+    <!-- hero with gradient fade -->
+    <section class="relative h-screen ">
+        <!-- image layer -->
+         <!-- <div class="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center bg-[linear-gradient(to_bottom,transparent_50%,white_50%)]"></div> -->
+
+
+        <div class=" absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover"></div>
+        <!-- fade to white -->
+        <div class="absolute inset-0  bg-gradient-to-b from-transparent to-white"></div>
+        <!-- content layer -->
+        <div class="relative z-10 h-full  flex flex-col justify-between">
+           <div class=" bg-white rounded shadow-md w-full mt-80 p-4 text-center">
+             <p class="text-gray-800 text-sm">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="/" class="text-blue-600">Click her to go to amazon.in</a></p>
+            </div>
+        
+    
+            <!-- product cards -->
+            <main class="container mx-auto px-4 py-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-8">
+                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
+                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
+                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
+                        <p class="text-gray-600">This is a description for card 1.</p>
+                    </div>
+                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
+                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
+                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
+                        <p class="text-gray-600">This is a description for card 1.</p>
+                    </div>
+                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
+                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
+                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
+                        <p class="text-gray-600">This is a description for card 1.</p>
+                    </div>
+                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
+                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
+                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
+                        <p class="text-gray-600">This is a description for card 1.</p>
+                    </div>
+                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
+                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
+                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
+                        <p class="text-gray-600">This is a description for card 1.</p>
+                    </div>
+                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
+                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
+                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
+                        <p class="text-gray-600">This is a description for card 1.</p>
+                    </div>
+                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
+                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
+                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
+                        <p class="text-gray-600">This is a description for card 1.</p>
+                    </div>
+                    <div class=" bg-white rounded-lg shadow hover:shadow-lg transition p-4" >
+                        <h3 class="text-lg font-bold mt-2">Card Title 1</h3>
+                        <img src="images/gaming.jpg" alt="Card Image" class="w-full h-50 object-cover rounded-md">
+                        <p class="text-gray-600">This is a description for card 1.</p>
+                    </div>
+                    
+                </div>
+
+            </main>
+        </div>
+    </section>
+    
     
 </body>
 </html>
